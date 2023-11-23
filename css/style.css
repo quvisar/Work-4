@@ -2,7 +2,7 @@
 body {
   color: rgb(128, 128, 128);
   font-size: 18px;
-  background: wheat;
+  background: green;
 }
 
 li {
@@ -46,10 +46,10 @@ h1 {
 }
 
 .container {
+  border-radius: 20px;
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 header, header ul, .header--end {
@@ -178,12 +178,12 @@ ul {
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
     width: 100%;
-    border: 1px solid red;
+    height: 100vh;
     position: absolute;
     top: -1000px;
     left: 0;
     display: block;
-    padding: 120px 0;
+    padding: 100px 0;
     font-size: 30px;
   }
   header ul li {
@@ -193,7 +193,7 @@ ul {
     font-size: 15px;
     content: "Меню";
     position: absolute;
-    top: 90px;
+    top: 70px;
     left: 0;
   }
   header ul.active {
@@ -206,7 +206,7 @@ ul {
             transition-duration: 0.2s;
     position: absolute;
     left: 0;
-    top: 400px;
+    top: 360px;
     opacity: 0;
   }
   .lang.active {
