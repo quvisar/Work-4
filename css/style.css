@@ -1,16 +1,10 @@
 @charset "UTF-8";
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html, body {
   height: 100%;
 }
 
 body {
   margin: 0;
-  background: grey;
   color: grey;
 }
 
@@ -41,13 +35,11 @@ ul li:hover {
   max-width: 1366px;
   margin: 0 auto;
   background: white;
-  height: 100%;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  background: white;
 }
 @media (max-width: 768px) {
   .container {
@@ -62,17 +54,25 @@ ul li:hover {
     position: absolute;
   }
   .container .menu {
-    top: 150px;
+    white-space: nowrap;
+    top: 80px;
     left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 70px 0 0 10%;
+    background: white;
   }
   .container .menu ul {
     display: block;
+  }
+  .container .menu li {
+    margin: 10px 0;
   }
   .container .menu:before {
     content: "Меню";
     font-size: 24px;
     position: absolute;
-    top: -50px;
+    top: 0;
   }
 }
 @media (max-width: 768px) and (max-width: 425px) {
@@ -87,7 +87,7 @@ ul li:hover {
     z-index: 30;
   }
   .container .switch {
-    left: 0;
+    left: 10%;
     bottom: 100px;
   }
   .container .switch.active {
@@ -104,11 +104,15 @@ ul li:hover {
   .container header {
     padding: 9px 0;
   }
+  .container .menu {
+    top: 60px;
+    padding-top: 50px;
+  }
+  .container .menu:before {
+    top: 15px;
+  }
   .container .menu, .container .switch {
     font-size: 36px;
-  }
-  .container .menu {
-    top: 110px;
   }
   .container .logo {
     font-size: 14px;
@@ -186,11 +190,6 @@ header label {
           transform: translateY(-5px) rotate(-45deg);
 }
 
-.pre-menu {
-  position: relative;
-  height: 100vh;
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,4 +217,106 @@ header label {
 
 .reg-img {
   display: none;
+}
+
+.block1 {
+  padding: 0 15px 80px 15px;
+  background: rgb(148, 61, 198);
+  background: linear-gradient(20deg, rgba(148, 61, 198, 0.4256495787) 0%, rgba(0, 212, 255, 0) 51%);
+}
+
+.container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block1-left {
+  max-width: 628px;
+}
+
+.block1-right img {
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h1 {
+  font-size: 56px;
+  margin: 110px 0 40px 0;
+  color: black;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.block1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 465px;
+  margin-bottom: 16px;
+}
+.block1 form .gmail {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  border-radius: 16px;
+}
+.block1 form .submit {
+  color: blue;
+}
+.block1 form input {
+  border: none;
+  font-size: 16px;
+  padding: 20px 24px 16px;
+}
+
+span {
+  color: blue;
+}
+
+.block1--go-next {
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  margin: 125px 0 0 0;
+}
+.block1--go-next img {
+  -webkit-transform: translate(0, 25%);
+          transform: translate(0, 25%);
+  margin-right: 8px;
+}
+
+@media (max-width: 1023.98px) {
+  .container-flex {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .block1--go-next {
+    display: none;
+  }
+  .block1 {
+    background: rgb(148, 61, 198);
+    background: linear-gradient(36deg, rgba(148, 61, 198, 0.4256495787) 3%, rgba(0, 212, 255, 0) 68%);
+  }
+  h1 {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 36px;
+  }
+  .block1 form input {
+    font-size: 14px;
+    padding: 18px 24px 18px 16px;
+  }
+  .block1-left {
+    margin-bottom: 40px;
+  }
 }

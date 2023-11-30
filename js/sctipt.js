@@ -8,4 +8,5 @@ function click(){
 	burger.classList.toggle('active');
 	menu.classList.toggle('active');
 	switche.classList.toggle('active');
+
 }
