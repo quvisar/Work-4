@@ -1,14 +1,11 @@
-let burger = document.querySelector(".burger");
-let menu = document.querySelector(".menu");
-let lang = document.querySelector(".lang");
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.menu');
+let switche = document.querySelector('.switch');
 
-burger.addEventListener("click",click);
+burger.addEventListener('click',click);
 
 function click(){
-	console.log("click");
-	burger.classList.toggle("active");
-	menu.classList.toggle("active");
-	lang.classList.toggle("active");
+	burger.classList.toggle('active');
+	menu.classList.toggle('active');
+	switche.classList.toggle('active');
 }
-
-console.log(burger);
