@@ -8,7 +8,7 @@ body{
 	margin: 0;
 	color: grey;
 	&.active{
-		overflow: hidden;
+		overflow:hidden;
 	}
 }
 a{
@@ -185,12 +185,12 @@ header{
 
 // block1 ---------------------------------------------------
 .block1{
-	padding: 0 0 80px 0;
 background: rgb(148,61,198);
 background: linear-gradient(20deg, rgba(148,61,198,0.4256495786516854) 0%, rgba(0,212,255,0) 51%);
 }
 .container-flex{
 	display: flex;
+	padding: 0 0 80px 0;
 }
 .block1-left{
 	max-width: 628px;
@@ -318,4 +318,6 @@ background: linear-gradient(36deg, rgba(148,61,198,0.4256495786516854) 3%, rgba(
 		}
 	}
 }
+
+// block3---------------------------------------------
 
