@@ -303,6 +303,11 @@ img {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
 }
+@media (max-width: 425px) {
+  .block1--email {
+    font-size: 14px;
+  }
+}
 
 .block1--submit {
   background: rgb(255, 255, 255);
