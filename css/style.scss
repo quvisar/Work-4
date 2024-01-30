@@ -75,7 +75,11 @@ background: linear-gradient(39deg, rgba(117,48,157,0.4846383426966292) 5%, rgba(
 		}
 		.header--lang{
 			font-size: 56px;
-			bottom: 0;
+			bottom: 80px;
+			@media(max-width: 425px){
+				font-size:36px;
+				bottom: 40px;
+			}
 		}
 		.header--items{
 			background:white;
@@ -88,6 +92,10 @@ background: linear-gradient(39deg, rgba(117,48,157,0.4846383426966292) 5%, rgba(
 				content:"Меню";
 				position: absolute;
 				top: 80px;
+				@media(max-width: 425px){
+					font-size: 18px;
+					top: 40px;
+				}
 			}
 		}
 		.header--item{
@@ -96,6 +104,12 @@ background: linear-gradient(39deg, rgba(117,48,157,0.4846383426966292) 5%, rgba(
 			margin-bottom: 15px;
 			&:first-child{
 				margin-top: 144px;
+				@media(max-width: 425px){
+					margin-top: 87px;				
+				}
+			}
+			@media(max-width: 425px){
+				font-size:36px;
 			}
 		}
 	}
@@ -203,6 +217,7 @@ background: linear-gradient(39deg, rgba(117,48,157,0.4846383426966292) 5%, rgba(
 	max-width: 628px;
 }
 .block1--right {
+	max-width: 628px;
 	position: relative;
 }
 .block1--title {
@@ -267,7 +282,7 @@ background: linear-gradient(39deg, rgba(117,48,157,0.4846383426966292) 5%, rgba(
 		font-size: 36px;
 	}
 	.block1{
-		padding: 0 20px;
+		padding: 0 20px 40px;
 	}
 }
 
