@@ -245,6 +245,8 @@ img {
 }
 
 .header--lang {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
   margin-right: 16px;
 }
 .header--lang input:checked + label {
