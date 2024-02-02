@@ -8,6 +8,9 @@ body{
 	margin: 0;
 	color: grey;
 	font-size: 18px;
+	&.active{
+		overflow: hidden;
+	}
 }
 h1,h2,h3{
 	color: initial;
