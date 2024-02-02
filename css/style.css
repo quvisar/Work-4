@@ -132,7 +132,7 @@ img {
 @media (max-width: 768px) and (max-width: 425px) {
   .header .header--lang {
     font-size: 36px;
-    bottom: 40px;
+    bottom: 0;
   }
 }
 @media (max-width: 768px) {
