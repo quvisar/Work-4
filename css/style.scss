@@ -55,7 +55,6 @@ img{
 .wrapper {
 	position: relative;
 	height: 100%;
-	// overflow: hidden;
 	@media(max-width: 425px){
 		.header{
 			padding-left:5px;
@@ -64,6 +63,9 @@ img{
 			margin-left: 10px;
 		}
 	}
+}
+.wrapper.active{
+	overflow: hidden;
 }
 .container {
 	// position: relative;
