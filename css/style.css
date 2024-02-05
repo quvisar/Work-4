@@ -71,6 +71,7 @@ img {
 
 .wrapper {
   position: relative;
+  height: 100vh;
 }
 @media (max-width: 425px) {
   .wrapper .header {
@@ -131,8 +132,15 @@ img {
 }
 @media (max-width: 768px) {
   .header .header--items.active, .header .header--lang.active {
-    left: 0;
+    left: 56px;
   }
+}
+@media (max-width: 768px) and (max-width: 425px) {
+  .header .header--items.active, .header .header--lang.active {
+    left: 20px;
+  }
+}
+@media (max-width: 768px) {
   .header .header--items, .header .header--lang {
     position: absolute;
     z-index: 1;
@@ -149,7 +157,7 @@ img {
 @media (max-width: 768px) and (max-width: 425px) {
   .header .header--lang {
     font-size: 36px;
-    bottom: 0;
+    bottom: 20px;
   }
 }
 @media (max-width: 768px) {

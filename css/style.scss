@@ -54,6 +54,7 @@ img{
 }
 .wrapper {
 	position: relative;
+	height: 100vh;
 	@media(max-width: 425px){
 		.header{
 			padding-left:5px;
@@ -99,7 +100,10 @@ img{
 	white-space: nowrap;
 	@media(max-width:768px){
 		.header--items.active,.header--lang.active{
-			left: 0;
+			left: 56px;
+			@media(max-width: 425px){
+				left: 20px;
+			}
 		}
 		.header--items,.header--lang{
 			position: absolute;
@@ -114,7 +118,7 @@ img{
 			bottom: 80px;
 			@media(max-width: 425px){
 				font-size:36px;
-				bottom: 0;
+				bottom: 20px;
 			}
 		}
 		.header--items{
