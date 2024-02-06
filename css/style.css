@@ -29,7 +29,7 @@ h2 {
 }
 @media (max-width: 425px) {
   h2 {
-    margin-top: 40px;
+    padding-top: 40px;
     font-size: 18px;
   }
 }
@@ -498,5 +498,103 @@ img {
   }
   .block2--item-h3 {
     margin: 0;
+  }
+}
+.block3 {
+  background: rgb(117, 48, 157);
+  background: linear-gradient(37deg, rgba(220, 103, 78, 0.338570927) 10%, rgba(78, 36, 211, 0) 29%, rgba(66, 33, 227, 0) 50%), linear-gradient(217deg, rgba(215, 78, 220, 0.3245259831) 5%, rgba(54, 36, 211, 0.1812675562) 22%, rgba(66, 33, 227, 0) 31%);
+}
+
+.block3--h2 {
+  margin-bottom: 40px;
+}
+
+.block3--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block3-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.block3--right {
+  margin-left: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.block3--right p:nth-child(3) {
+  color: blue;
+}
+
+.block3--header {
+  max-width: 422px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  color: white;
+}
+.block3--header span:nth-child(1):hover, .block3--header span:nth-child(3):hover, .block3--header span:nth-child(5):hover {
+  color: blue;
+}
+
+.block3-right-h2 {
+  padding-top: 30px;
+  margin-bottom: 16px;
+}
+
+.block3--p {
+  margin-bottom: 16px;
+}
+
+.block3--button {
+  display: inline-block;
+  margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .block3--items {
+    display: block;
+  }
+  .block3--button {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .block3 {
+    background: rgb(215, 78, 220);
+    background: linear-gradient(225deg, rgba(215, 78, 220, 0.3245259831) 5%, rgba(54, 36, 211, 0.1812675562) 22%, rgba(66, 33, 227, 0) 81%);
+  }
+  .block3 span {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .block3--button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block3-right-h2 {
+    padding-top: 0;
+    font-size: 24px;
+  }
+  .block3--h2 {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .block3--header {
+    margin-top: 0;
   }
 }
