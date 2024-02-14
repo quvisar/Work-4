@@ -45,10 +45,12 @@ h3 {
 }
 
 p {
+  display: inline-block;
   margin: 0;
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
 }
@@ -328,6 +330,7 @@ img {
 }
 
 .button {
+  text-align: center;
   padding: 12px 24px;
   background: blue;
   color: white;
@@ -597,4 +600,103 @@ img {
   .block3--header {
     margin-top: 0;
   }
+  .block3--right {
+    margin-left: 0;
+  }
+}
+.block2--item-titleBlock {
+  padding: 20px 0;
+}
+
+.block4--h2 {
+  line-height: 40.32px;
+  margin-bottom: 40px;
+}
+@media (max-width: 490px) {
+  .block4--h2 {
+    padding-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+.block4--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.block4--items .block--item-p {
+  background: url("../img/block4/agree.svg") no-repeat 10px 12px;
+}
+.block4--items .block4--item:nth-child(1) p:nth-child(2), .block4--items .block4--item:nth-child(1) p:nth-child(3), .block4--items .block4--item:nth-child(1) p:nth-child(4) {
+  background: url("../img/block4/dis.svg") no-repeat 10px 12px;
+}
+.block4--items .block4--item:nth-child(2) p:nth-child(3), .block4--items .block4--item:nth-child(2) p:nth-child(4) {
+  background: url("../img/block4/dis.svg") no-repeat 10px 12px;
+}
+.block4--items .block4--item:nth-child(3) p:nth-child(4) {
+  background: url("../img/block4/dis.svg") no-repeat 10px 12px;
+}
+
+.block4--item {
+  padding: 0 24px 24px 24px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24.84375%;
+          flex: 0 1 24.84375%;
+}
+@media (max-width: 1023.98px) {
+  .block4--item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+  }
+}
+@media (max-width: 768px) {
+  .block4--item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+@media (max-width: 495px) {
+  .block4--item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.block4--item-title {
+  margin-bottom: 8px;
+}
+
+.block--item-subTitle {
+  line-height: 100%;
+  font-size: 24px;
+}
+.block--item-subTitle span {
+  color: blue;
+}
+
+.block--item-ps {
+  margin-top: 24px;
+}
+
+.block--item-p {
+  line-height: 24.3px;
+  padding-left: 48px;
+}
+.block--item-p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.block--item-button {
+  background: white;
+  color: blueviolet;
+  margin-top: 16px;
+  width: 100%;
 }
