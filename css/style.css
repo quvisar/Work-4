@@ -700,3 +700,129 @@ img {
   margin-top: 16px;
   width: 100%;
 }
+
+.block5 {
+  min-height: 800px;
+  background: rgb(247, 41, 131);
+  background: linear-gradient(225deg, rgba(247, 41, 131, 0.7641327247) 0%, rgba(54, 36, 211, 0.1489641854) 18%, rgba(66, 33, 227, 0) 81%), linear-gradient(323deg, rgba(41, 77, 247, 0.6208742978) 0%, rgba(54, 36, 211, 0) 18%, rgba(66, 33, 227, 0) 81%);
+}
+@media (max-width: 768px) {
+  .block5 {
+    padding-bottom: 80px;
+  }
+}
+
+.container {
+  min-height: 800px;
+  position: relative;
+}
+
+.block5--items {
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 768px) {
+  .block5--items {
+    position: relative;
+  }
+}
+
+.block5--item-data {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+.block5--item {
+  position: absolute;
+  padding: 16px 24px;
+  max-width: 628px;
+  background: white;
+  border-radius: 16px;
+}
+.block5--item:nth-child(1) {
+  top: 216px;
+  z-index: 1;
+}
+.block5--item:nth-child(2) {
+  top: 160px;
+  left: 326px;
+  z-index: 2;
+}
+.block5--item:nth-child(3) {
+  left: 164px;
+  bottom: 80px;
+  z-index: 3;
+}
+.block5--item:nth-child(4) {
+  right: 32px;
+  bottom: 208px;
+  z-index: 3;
+}
+@media (max-width: 768px) {
+  .block5--item {
+    position: relative;
+  }
+  .block5--item:nth-child(1) {
+    margin-top: 40px;
+  }
+  .block5--item:nth-child(1), .block5--item:nth-child(2), .block5--item:nth-child(3), .block5--item:nth-child(4) {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.block5--item-title {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.block5--item-title span {
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.block5--item-img {
+  display: inline-block;
+  max-width: 64px;
+  border-radius: 50%;
+}
+
+.block5--item-p {
+  line-height: 135%;
+  padding-right: 45px;
+}
+
+.star {
+  margin-top: 16px;
+  display: inline-block;
+  background: red;
+  width: 24px;
+  height: 24px;
+  background: url("../img/block5/star01.jpg") no-repeat;
+}
+
+.block5--button {
+  position: absolute;
+  right: 32px;
+  bottom: 80px;
+  background: white;
+  color: blue;
+}
+@media (max-width: 768px) {
+  .block5--button {
+    display: none;
+  }
+}

@@ -556,3 +556,114 @@ background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba
 	width: 100%;
 }
 .button {}
+
+
+// BLOCK5
+
+.block5 {
+	min-height: 800px;
+background: rgb(247,41,131);
+background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba(54,36,211,0.1489641853932584) 18%, rgba(66,33,227,0) 81%),linear-gradient(323deg, rgba(41,77,247,0.620874297752809) 0%, rgba(54,36,211,0) 18%, rgba(66,33,227,0) 81%);
+	@media(max-width: 768px){
+		padding-bottom: 80px;
+	}
+}
+.container {
+	min-height: 800px;
+	position: relative;
+}
+.block5--title {}
+.block5--items {
+	max-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	@media(max-width: 768px){
+		position: relative;
+	}
+}
+.block5--item-data{
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+}
+.block5--item {
+	position: absolute;
+	padding: 16px 24px;
+	max-width: 628px;
+	background:white;
+	border-radius: 16px;
+	&:nth-child(1){
+		top:216px;
+		z-index: 1;
+	}
+	&:nth-child(2){
+		top:160px;
+		left: 326px;
+		z-index: 2;
+	}
+	&:nth-child(3){       
+		left: 164px;
+		bottom: 80px;
+		z-index: 3;
+	}
+	&:nth-child(4){       
+		right: 32px;
+		bottom: 208px;
+		z-index: 3;
+	}
+	@media(max-width: 768px){
+		position: relative;
+		&:nth-child(1){
+			margin-top: 40px;
+		}
+		&:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
+			top: 0;
+			left: 0;
+			z-index: 0;
+			margin-bottom: 24px;
+		}
+	}
+}
+.block5--item-title {
+	padding: 16px;
+	display: flex;
+	font-size: 24px;
+	align-items: center;
+	span{
+		white-space: nowrap;
+		display: inline-block;
+		margin-left: 16px;
+	}
+}
+.block5--item-img {
+	display: inline-block;
+	max-width: 64px;
+	border-radius: 50%;
+}
+.block5--item-p {
+	line-height:calc(24.3/18*100%);
+	padding-right: 45px;
+}
+.block5--item-stars {}
+.star{
+	margin-top: 16px;
+	display: inline-block;
+	background: red;
+	width: 24px;
+	height: 24px;
+	background: url('../img/block5/star01.jpg') no-repeat;
+}
+.block5--button {
+	position: absolute;
+	right: 32px;
+	bottom:80px;
+	background: white;
+	color: blue;
+	@media(max-width: 768px){
+		display: none;
+	}
+}
+.button {}
