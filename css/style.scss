@@ -561,6 +561,7 @@ background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba
 // BLOCK5
 
 .block5 {
+	padding: 0 20px;
 	min-height: 800px;
 background: rgb(247,41,131);
 background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba(54,36,211,0.1489641853932584) 18%, rgba(66,33,227,0) 81%),linear-gradient(323deg, rgba(41,77,247,0.620874297752809) 0%, rgba(54,36,211,0) 18%, rgba(66,33,227,0) 81%);
@@ -637,11 +638,18 @@ background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba
 		display: inline-block;
 		margin-left: 16px;
 	}
+	@media(max-width: 768px){
+		font-size: 18px;
+		padding: 16px 0;
+	}
 }
 .block5--item-img {
 	display: inline-block;
 	max-width: 64px;
 	border-radius: 50%;
+	@media(max-width: 768px){
+		max-width: 48px;
+	}
 }
 .block5--item-p {
 	line-height:calc(24.3/18*100%);
