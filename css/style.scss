@@ -360,7 +360,7 @@ img{
 }
 .block2--item-h3 {
 	padding: 12px 0 12px 16px;
-	white-space: nowrap;
+	// white-space: nowrap;
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
@@ -561,7 +561,6 @@ background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba
 // BLOCK5
 
 .block5 {
-	padding: 0 20px;
 	min-height: 800px;
 background: rgb(247,41,131);
 background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba(54,36,211,0.1489641853932584) 18%, rgba(66,33,227,0) 81%),linear-gradient(323deg, rgba(41,77,247,0.620874297752809) 0%, rgba(54,36,211,0) 18%, rgba(66,33,227,0) 81%);
@@ -569,7 +568,7 @@ background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba
 		padding-bottom: 80px;
 	}
 }
-.container {
+.block5-container{
 	min-height: 800px;
 	position: relative;
 }
@@ -616,6 +615,7 @@ background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba
 		z-index: 3;
 	}
 	@media(max-width: 768px){
+		margin: 0 auto;
 		position: relative;
 		&:nth-child(1){
 			margin-top: 40px;
@@ -675,3 +675,69 @@ background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba
 	}
 }
 .button {}
+
+// BLOCK6
+
+.block6 {
+}
+.block {}
+.block6--items{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	@media(max-width: 768px){
+		display: block;
+	}
+}
+.block6--left {
+	margin: 0 auto;
+}
+.block6--left-img{	
+	max-width:628px;
+	@media(max-width: 768px){
+		width:100%;
+		max-width: 100%;
+	}
+}
+.block6--right {
+	max-width: 428px;
+}
+.block6--right-title{
+	font-size: 56px;
+	margin-bottom: 40px;
+	@media(max-width: 768px){
+		font-size: 36px;
+		padding-top: 0;
+	}
+}
+.block6--form {
+	background: rgba(242, 242, 242, 1);
+	display: inline-block;
+	border-radius: 16px;
+	padding: 8px 8px 8px 16px;
+	margin-bottom: 16px;
+	width: 100%;
+	max-width: 465px;
+	display: flex;
+}
+.block6--input {
+	flex: 1 1 100%;
+	font-size: 18px;
+	&:focus::placeholder{
+		font-size: 0;
+	}
+	@media(max-width: 768px){
+		font-size: 14px;
+	}
+}
+.block6--submit {
+}
+.button {}
+.block6--p {
+	display: block;
+	font-size: 12px;
+	line-height: 16.2px;
+	span{
+		color: blue;
+	}
+}
