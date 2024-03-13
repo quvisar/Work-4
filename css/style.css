@@ -981,7 +981,7 @@ img {
   top: 50%;
   width: 24px;
   height: 2px;
-  border-radius: 50%;
+  border-radius: 16px;
   background: black;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
