@@ -1009,3 +1009,112 @@ img {
     padding: 16px 24px 24px;
   }
 }
+
+.block8 {
+  padding-bottom: 0;
+}
+
+.block8--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block8--left {
+  max-width: 628px;
+  width: 100%;
+}
+
+.block8--h2 {
+  margin-bottom: 16px;
+}
+
+.block8--p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.block8--form {
+  padding-bottom: 80px;
+  max-width: 465px;
+}
+.block8--form input, .block8--form textarea {
+  display: block;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: rgb(242, 242, 242);
+  width: 100%;
+  border-radius: 16px;
+  font-size: 16px;
+}
+.block8--form input:focus::-webkit-input-placeholder, .block8--form textarea:focus::-webkit-input-placeholder {
+  font-size: 0;
+}
+.block8--form input:focus::-moz-placeholder, .block8--form textarea:focus::-moz-placeholder {
+  font-size: 0;
+}
+.block8--form input:focus:-ms-input-placeholder, .block8--form textarea:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+.block8--form input:focus::-ms-input-placeholder, .block8--form textarea:focus::-ms-input-placeholder {
+  font-size: 0;
+}
+.block8--form input:focus::placeholder, .block8--form textarea:focus::placeholder {
+  font-size: 0;
+}
+.block8--form textarea {
+  resize: none;
+  border: none;
+}
+.block8--form textarea:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .block8--form {
+    padding-bottom: 20px;
+  }
+}
+
+.block8--left-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .block8--left-items {
+    display: block;
+  }
+}
+
+.block8--button {
+  white-space: nowrap;
+  margin-right: 24px;
+  font-size: 18px;
+  padding: 16px 24px;
+}
+@media (max-width: 768px) {
+  .block8--button {
+    margin-bottom: 16px;
+  }
+}
+
+.block8--left-p {
+  font-size: 12px;
+}
+.block8--left-p span {
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .block8--right {
+    display: none;
+  }
+}
+
+.block8--right-img {
+  max-width: 489px;
+  max-height: 489px;
+}
