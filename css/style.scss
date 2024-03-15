@@ -1,7 +1,9 @@
 *{
 	box-sizing: border-box;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 html,body{
 	height: 100%;
 }
@@ -890,4 +892,34 @@ background: linear-gradient(28deg, rgba(125,41,247,0.620874297752809) 11%, rgba(
 .block8--right-img {
 	max-width: 489px;
 	max-height: 489px;
+}
+
+// FOOTER
+
+.block9 {
+	background: blue;
+	padding-bottom: 0;
+}
+.container {}
+.block9--items {
+	padding: 25px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.block9--left {
+	max-width: 192px;
+}
+.block9--left-h3 {
+	font-size: 18px;
+	color: white;
+}
+.block9--left-p {
+	font-size: 16px;
+    font-weight:21.6px;
+	color:rgba(250, 250, 250, 0.9)
+}
+.block9--right {}
+.block9--right-up {
+	color: white;
 }
