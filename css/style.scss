@@ -239,6 +239,8 @@ img{
 	display: flex;
 }
 .header--lang {
+	display: flex;
+	align-items: center;
 	transition-duration: 0.7s;
 	margin-right: 16px;
 	input:checked + label{
@@ -909,6 +911,9 @@ background: linear-gradient(28deg, rgba(125,41,247,0.620874297752809) 11%, rgba(
 }
 .block9--left {
 	max-width: 192px;
+	@media(max-width: 768px){
+		font-size: 14px;
+	}
 }
 .block9--left-h3 {
 	font-size: 18px;
@@ -916,10 +921,21 @@ background: linear-gradient(28deg, rgba(125,41,247,0.620874297752809) 11%, rgba(
 }
 .block9--left-p {
 	font-size: 16px;
-    font-weight:21.6px;
+    line-height:21.6px;
 	color:rgba(250, 250, 250, 0.9)
 }
 .block9--right {}
 .block9--right-up {
 	color: white;
+	margin-right: 8px;
+	@media(max-width: 768px){
+		span{
+			display: none;
+			font-size: 14px;
+		}
+	}
+}
+.block9--right-img{
+	max-width: 16px;
+	margin-left: 8px;
 }
