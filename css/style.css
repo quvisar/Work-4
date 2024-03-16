@@ -129,6 +129,11 @@ img {
   background: rgb(117, 48, 157);
   background: linear-gradient(39deg, rgba(117, 48, 157, 0.4846383427) 5%, rgba(66, 33, 227, 0.3469978933) 18%, rgba(31, 0, 255, 0) 40%);
 }
+@media (max-width: 768px) {
+  .block1 {
+    height: 100vh;
+  }
+}
 
 .header {
   background: white;
