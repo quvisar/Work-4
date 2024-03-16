@@ -13,7 +13,9 @@ body{
 	font-size: 18px;
 }
 html.active{
-	overflow: hidden;
+	@media(max-width: 768px){
+		overflow: hidden;
+	}
 }
 h1,h2,h3{
 	color: initial;
@@ -69,7 +71,9 @@ img{
 	}
 }
 .wrapper.active{
-	overflow: hidden;
+	@media(max-width: 768px){
+		overflow: hidden;
+	}
 }
 .container {
 	max-width: 1280px;
@@ -310,6 +314,8 @@ img{
 	display: flex;
 	align-items: center;
 	margin: 126px 0 89px 0;
+	max-width: 100%;
+	cursor: pointer;
 }
 
 .block1--img{}

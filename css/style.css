@@ -18,8 +18,10 @@ body {
   font-size: 18px;
 }
 
-html.active {
-  overflow: hidden;
+@media (max-width: 768px) {
+  html.active {
+    overflow: hidden;
+  }
 }
 
 h1, h2, h3 {
@@ -88,8 +90,10 @@ img {
   }
 }
 
-.wrapper.active {
-  overflow: hidden;
+@media (max-width: 768px) {
+  .wrapper.active {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -420,6 +424,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 126px 0 89px 0;
+  max-width: 100%;
+  cursor: pointer;
 }
 
 .block1--mouse {
