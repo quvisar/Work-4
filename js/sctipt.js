@@ -5,12 +5,24 @@ let lang = document.querySelector('.header--lang');
 let html = document.querySelector('html');
 let wrap = document.querySelector('.wrapper');
 let question = document.querySelectorAll('.block7--item');
+let cats = document.querySelector('.block5--button');
 
 
 burger.addEventListener("click",active);
 menu.addEventListener("click",active);
+cats.addEventListener("click",activeCats);
 
 
+function activeCats(){
+	let items = document.querySelector('.block5--items');
+	let item = document.querySelectorAll('.block5--item');
+	cats.classList.toggle('active');
+	items.classList.toggle('active');
+	for(let i of item){
+		i.classList.toggle('active');
+	}
+
+}
 function active() {
 	burger.classList.toggle('active');
 	menu.classList.toggle('active');
