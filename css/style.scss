@@ -308,17 +308,33 @@ img{
 }
 .block1--p {
 	font-size: 12px;
+	width: 100%;
 }
 .block1--span {
 	color: blue;
 }
 .block1--go-next {
 	color: white;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	margin: 126px 0 89px 0;
-	max-width: 100%;
 	cursor: pointer;
+	transition-duration:1s;
+	animation:move 3s linear infinite running ;
+	&:hover{
+		letter-spacing: 2px;
+	}
+	@keyframes move{
+		0%{
+			transform: scale(1.0);
+		}
+		50%{
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1.0);
+		}
+	}
 }
 
 .block1--img{
@@ -375,7 +391,6 @@ img{
 }
 .block2--item-h3 {
 	padding: 12px 0 12px 16px;
-	// white-space: nowrap;
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
@@ -435,12 +450,19 @@ background: linear-gradient(37deg, rgba(220,103,78,0.3385709269662921) 10%, rgba
 	max-width: 422px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-top: 20px;
-	color: white;
+	color: grey;
 	& span:nth-child(1),& span:nth-child(3),& span:nth-child(5){
 		&:hover{
 			color: blue;
 		}
+	}
+	& span:nth-child(even){
+		display: block;
+		width: 24px;
+		height: 2px;	
+		background:grey;
 	}
 }
 .block3-right-h2 {
@@ -532,8 +554,11 @@ background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba
 	}
 }
 .block4--item {
+	border-radius: 15px;
 	padding: 0 24px 24px 24px;
 	flex:0 1 calc(318/1280*100%);
+	transition-duration:0.3s;
+
 	@media(max-width: 1023.98px){
 		flex: 0 1 33%;
 	}
@@ -542,6 +567,10 @@ background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba
 	}
 	@media(max-width: 495px){
 		flex: 0 1 100%;
+	}
+	&:hover{
+		transform: scale(1.01);
+		box-shadow: 1px 1px 15px 1px grey;
 	}
 }
 .block4--item-title {
@@ -699,13 +728,13 @@ background: linear-gradient(225deg, rgba(247,41,131,0.7641327247191011) 0%, rgba
 	bottom:80px;
 	background: white;
 	color: blue;
+	z-index:4;
 	@media(max-width: 768px){
 		display: none;
 	}
 	&.active{
-		position: relative;
-		top: 0;
-		left:0;
+		bottom: -40px;
+		right: 0;
 	}
 }
 .button {}

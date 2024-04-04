@@ -414,6 +414,7 @@ img {
 
 .block1--p {
   font-size: 12px;
+  width: 100%;
 }
 
 .block1--span {
@@ -422,15 +423,49 @@ img {
 
 .block1--go-next {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 126px 0 89px 0;
-  max-width: 100%;
   cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-animation: move 3s linear infinite running;
+          animation: move 3s linear infinite running;
+}
+.block1--go-next:hover {
+  letter-spacing: 2px;
+}
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes move {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .block1--img {
@@ -566,11 +601,20 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
-  color: white;
+  color: grey;
 }
 .block3--header span:nth-child(1):hover, .block3--header span:nth-child(3):hover, .block3--header span:nth-child(5):hover {
   color: blue;
+}
+.block3--header span:nth-child(even) {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: grey;
 }
 
 .block3-right-h2 {
@@ -667,10 +711,13 @@ img {
 }
 
 .block4--item {
+  border-radius: 15px;
   padding: 0 24px 24px 24px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 24.84375%;
           flex: 0 1 24.84375%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 @media (max-width: 1023.98px) {
   .block4--item {
@@ -692,6 +739,12 @@ img {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
+}
+.block4--item:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 1px 1px 15px 1px grey;
+          box-shadow: 1px 1px 15px 1px grey;
 }
 
 .block4--item-title {
@@ -877,6 +930,7 @@ img {
   bottom: 80px;
   background: white;
   color: blue;
+  z-index: 4;
 }
 @media (max-width: 768px) {
   .block5--button {
@@ -884,9 +938,8 @@ img {
   }
 }
 .block5--button.active {
-  position: relative;
-  top: 0;
-  left: 0;
+  bottom: -40px;
+  right: 0;
 }
 
 .block6--items {
