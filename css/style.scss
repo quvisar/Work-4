@@ -141,15 +141,9 @@ img{
 			height: 100%;
 			opacity: 0.95;
 			outline: 100px solid white;
-			&:before{
-				font-size: 24px;
-				content:"Меню";
-				position: absolute;
-				top: 80px;
-				@media(max-width: 425px){
-					font-size: 18px;
-					top: 40px;
-				}
+			padding-top: 80px;
+			@media(max-width: 425px){
+				padding-top: 100px;
 			}
 		}
 		.header--item{
@@ -235,6 +229,20 @@ img{
 .header--items {
 	transition-duration: 0.7s;
 }
+.header--item-menu{
+	position: absolute;
+	top: 80px;
+	font-size: 24px;
+	display:none;
+	@media(max-width: 768px){
+		display: block;
+		font-size: 24px;
+		top: 40px;
+	}
+	@media(max-width: 425px){
+		font-size: 18px;
+	}
+}
 .header--item {
 	margin: 0 12px;
 	transition-duration: 0.6s;
@@ -255,6 +263,9 @@ img{
 	}
 	input{
 		display: none;
+	}
+	span{
+		margin: 0 5px;
 	}
 }
 .header--button {}
