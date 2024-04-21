@@ -12,7 +12,6 @@ burger.addEventListener("click",active);
 menu.addEventListener("click",active);
 cats.addEventListener("click",activeCats);
 
-
 function activeCats(){
 	let items = document.querySelector('.block5--items');
 	let item = document.querySelectorAll('.block5--item');
@@ -57,5 +56,19 @@ function active2(){
 				y.classList.remove('active');
 			}
 		}
+	}
+}
+
+let Block_1 = document.querySelector('.block1');
+let Block_8 = document.querySelector('.block8');
+
+let scrollbutton = document.querySelector('.wrapper--buttonUp');
+window.addEventListener('scroll',windowSctoll);
+
+function windowSctoll(){
+	if(window.pageYOffset>=Block_1.clientHeight && window.pageYOffset<document.documentElement.scrollHeight-Block_8.clientHeight*1.5){
+		scrollbutton.classList.add('active');
+	}else{
+		scrollbutton.classList.remove('active');
 	}
 }

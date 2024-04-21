@@ -75,6 +75,29 @@ img{
 		overflow: hidden;
 	}
 }
+.wrapper--buttonUp{
+	background: blue;
+	border-radius: 10px;
+	align-items: center;
+	padding: 10px;
+	position: fixed;
+	right: 10px;
+	bottom:20px;
+	color: black;
+	display: none;
+	z-index: 1000;
+	span{
+		margin-right: 5px;
+	}
+	&.active{
+		display: flex;
+	}
+	@media(max-width: 768px){
+		span{
+			display: none;
+		}
+	}
+}
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -143,7 +166,7 @@ img{
 			outline: 100px solid white;
 			padding-top: 80px;
 			@media(max-width: 425px){
-				padding-top: 100px;
+				padding-top: 10 0px;
 			}
 		}
 		.header--item{
@@ -886,7 +909,7 @@ background: linear-gradient(28deg, rgba(125,41,247,0.620874297752809) 11%, rgba(
 // BLOCK8
 
 .block8 {
-	padding-bottom: 0;
+	padding-bottom: 15px;
 }
 .main--block {}
 .container {}
@@ -921,6 +944,7 @@ background: linear-gradient(28deg, rgba(125,41,247,0.620874297752809) 11%, rgba(
 		}
 	}
 	textarea{
+		margin-bottom: 35px;
 		resize: none;
 		border:none;
 		&:focus{
