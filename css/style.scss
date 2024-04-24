@@ -471,13 +471,34 @@ background: linear-gradient(37deg, rgba(220,103,78,0.3385709269662921) 10%, rgba
 	display: flex;
 }
 .block3-left {
-	flex: 1 1 50%;
+	display: flex;
+	flex: 0 0 50%;
+	overflow:hidden;
+	transition-duration:1s;
+	div{
+		transition-duration: 1s;
+		position: relative;
+		flex: 0 0 100%;
+		left: 0;
+	}
 }
 .block3--right {
 	margin-left: 24px;
 	flex: 1 1 50%;
 	& p:nth-child(3){
 		color: blue;
+	}
+	input{
+		display: none;
+	}
+	label{
+		padding-bottom: 5px;
+		border-bottom: 1px solid transparent;
+	}
+	input:checked~label{
+		color: blue;
+		transition-duration: 1s;
+		border-bottom: 1px solid blue;
 	}
 }
 .block3--header {
@@ -1033,3 +1054,7 @@ background: linear-gradient(28deg, rgba(125,41,247,0.620874297752809) 11%, rgba(
 	max-width: 16px;
 	margin-left: 8px;
 }
+
+
+// ==============================================
+

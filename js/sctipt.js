@@ -59,6 +59,8 @@ function active2(){
 	}
 }
 
+// ----------------------------------------------------------
+
 let Block_1 = document.querySelector('.block1');
 let Block_8 = document.querySelector('.block8');
 
@@ -70,5 +72,39 @@ function windowSctoll(){
 		scrollbutton.classList.add('active');
 	}else{
 		scrollbutton.classList.remove('active');
+	}
+}
+
+// ----------------------------------------------------------
+
+let radioPic = document.querySelectorAll('.block3-left-radioPic');
+// for(rPic of radioPic){
+
+// }
+
+let radioBtn = document.querySelectorAll('.block3--right-radio');
+
+console.log(radioBtn.length);
+for(Btn of radioBtn){
+	Btn.addEventListener('click',radioActive);
+}
+
+function radioActive() {
+	for(Btn of radioBtn){
+		if (Btn.checked) {
+			for(let i=0;i<=radioPic.length;i++){
+				if(i==this.id){
+					let width = parseInt(window.getComputedStyle(radioPic[i-1]).width);
+					console.log(width);
+					for(let y=0;y<radioPic.length;y++){
+						console.log(i);
+						let sum = width-width * i + 'px';
+						console.log(sum);
+						// console.log(radioPic[y]);
+						radioPic[y].style.left =`${sum}`;
+					}
+				}
+			}
+		}
 	}
 }
