@@ -495,6 +495,11 @@ background: linear-gradient(37deg, rgba(220,103,78,0.3385709269662921) 10%, rgba
 		white-space: nowrap;
 		padding-bottom: 5px;
 		border-bottom: 1px solid transparent;
+		span{
+			@media(max-width: 475px){
+				display: none;
+			}
+		}
 	}
 	input:checked~label{
 		color: blue;
@@ -509,7 +514,8 @@ background: linear-gradient(37deg, rgba(220,103,78,0.3385709269662921) 10%, rgba
 	align-items: center;
 	margin-top: 20px;
 	color: grey;
-	& span{
+	margin-bottom:15px;
+	& >span{
 		display:0 0 flex;
 		width: 24px;
 		height: 2px;	
@@ -541,12 +547,6 @@ background: linear-gradient(37deg, rgba(220,103,78,0.3385709269662921) 10%, rgba
 	.block3{
 background: rgb(215,78,220);
 background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba(54,36,211,0.1812675561797753) 22%, rgba(66,33,227,0) 81%);
-		span{
-			font-size: 14px;
-			width: 5px;
-			height: 5px;
-			border-radius: 50%;
-		}
 	}
 	.block3--button{
 		display: flex;

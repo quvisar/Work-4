@@ -658,6 +658,11 @@ img {
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
 }
+@media (max-width: 475px) {
+  .block3--right label span {
+    display: none;
+  }
+}
 .block3--right input:checked ~ label {
   color: blue;
   -webkit-transition-duration: 1s;
@@ -678,8 +683,9 @@ img {
           align-items: center;
   margin-top: 20px;
   color: grey;
+  margin-bottom: 15px;
 }
-.block3--header span {
+.block3--header > span {
   display: 0 0 flex;
   width: 24px;
   height: 2px;
@@ -713,12 +719,6 @@ img {
   .block3 {
     background: rgb(215, 78, 220);
     background: linear-gradient(225deg, rgba(215, 78, 220, 0.3245259831) 5%, rgba(54, 36, 211, 0.1812675562) 22%, rgba(66, 33, 227, 0) 81%);
-  }
-  .block3 span {
-    font-size: 14px;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
   }
   .block3--button {
     display: -webkit-box;
