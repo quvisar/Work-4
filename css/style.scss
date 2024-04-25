@@ -492,6 +492,7 @@ background: linear-gradient(37deg, rgba(220,103,78,0.3385709269662921) 10%, rgba
 		display: none;
 	}
 	label{
+		white-space: nowrap;
 		padding-bottom: 5px;
 		border-bottom: 1px solid transparent;
 	}
@@ -508,16 +509,12 @@ background: linear-gradient(37deg, rgba(220,103,78,0.3385709269662921) 10%, rgba
 	align-items: center;
 	margin-top: 20px;
 	color: grey;
-	& span:nth-child(1),& span:nth-child(3),& span:nth-child(5){
-		&:hover{
-			color: blue;
-		}
-	}
-	& span:nth-child(even){
-		display: block;
+	& span{
+		display:0 0 flex;
 		width: 24px;
 		height: 2px;	
 		background:grey;
+		margin-bottom: 0;
 	}
 }
 .block3-right-h2 {
@@ -546,7 +543,9 @@ background: rgb(215,78,220);
 background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba(54,36,211,0.1812675561797753) 22%, rgba(66,33,227,0) 81%);
 		span{
 			font-size: 14px;
-			margin-bottom: 15px;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
 		}
 	}
 	.block3--button{
