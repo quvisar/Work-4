@@ -619,12 +619,14 @@ background: linear-gradient(225deg, rgba(215,78,220,0.3245259831460674) 5%, rgba
 	@media(max-width: 768px){
 		flex: 0 1 50%;
 	}
-	@media(max-width: 495px){
+	@media(max-width: 475px){
 		flex: 0 1 100%;
+		box-shadow: 1px 1px 10px 1px blue;
+		margin-top: 20px;
 	}
 	&:hover{
 		transform: scale(1.01);
-		box-shadow: 1px 1px 15px 1px grey;
+		box-shadow: 1px 1px 25px 1px red;
 	}
 }
 .block4--item-title {

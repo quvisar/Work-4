@@ -805,18 +805,21 @@ img {
             flex: 0 1 50%;
   }
 }
-@media (max-width: 495px) {
+@media (max-width: 475px) {
   .block4--item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+    -webkit-box-shadow: 1px 1px 10px 1px blue;
+            box-shadow: 1px 1px 10px 1px blue;
+    margin-top: 20px;
   }
 }
 .block4--item:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-box-shadow: 1px 1px 15px 1px grey;
-          box-shadow: 1px 1px 15px 1px grey;
+  -webkit-box-shadow: 1px 1px 25px 1px red;
+          box-shadow: 1px 1px 25px 1px red;
 }
 
 .block4--item-title {
