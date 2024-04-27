@@ -340,12 +340,13 @@ img{
 	background:rgba(255, 255, 255, 1);
 	color: blue;
 }
-.block1--p {
+.block1--p, .block1--p2{
 	font-size: 12px;
 	width: 100%;
 }
-.block1--span {
+.block1--p2 {
 	color: blue;
+	cursor: pointer;
 }
 .block1--go-next {
 	color: white;

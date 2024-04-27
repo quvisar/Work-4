@@ -68,7 +68,7 @@ let scrollbutton = document.querySelector('.wrapper--buttonUp');
 window.addEventListener('scroll',windowSctoll);
 
 function windowSctoll(){
-	if(window.pageYOffset>=Block_1.clientHeight && window.pageYOffset<document.documentElement.scrollHeight-Block_8.clientHeight*1.5){
+	if(window.pageYOffset>=Block_1.clientHeight && window.pageYOffset<document.documentElement.scrollHeight-Block_8.clientHeight*2.5){
 		scrollbutton.classList.add('active');
 	}else{
 		scrollbutton.classList.remove('active');
@@ -100,7 +100,6 @@ function radioActive() {
 						console.log(i);
 						let sum = width-width * i + 'px';
 						console.log(sum);
-						// console.log(radioPic[y]);
 						radioPic[y].style.left =`${sum}`;
 					}
 				}

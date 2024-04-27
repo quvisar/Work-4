@@ -26,6 +26,10 @@ let changeLang = {
 		Ru:'обратная связь',
 		En:'feedback',
 	},
+	reg:{
+		Ru:'Вход и регистрация',
+		En:'Login and registration',
+	},
 	// block1
 
 	blockTitle:{
@@ -35,6 +39,22 @@ let changeLang = {
 	submit:{
 		Ru:'Отправить',
 		En:'Send',
+	},
+	p1:{
+		Ru:'Нажимая на кнопку вы соглашаетесь на обработку',
+		En:'By clicking on the button you agree to the processing',
+	},
+	p2:{
+		Ru:'персональных данных',
+		En:'personal data',
+	},
+	goNext:{
+		Ru:'Листайте дальше',
+		En:'Scroll further',
+	},
+	placeholder:{
+		Ru:'Введите свой e-mail',
+		En:'Enter your email',
 	},
 }
 
@@ -50,7 +70,11 @@ function change() {
 		for(let x of lng){
 			for(let i of changeLangBtn){
 				if(i.checked){
-					x.innerHTML = changeLang[y][i.id].charAt(0).toUpperCase()+changeLang[y][i.id].slice(1);
+					if(x.placeholder){
+						x.placeholder = changeLang[y][i.id];
+					}else{
+						x.innerHTML = changeLang[y][i.id].charAt(0).toUpperCase()+changeLang[y][i.id].slice(1);
+					}
 				}
 			}
 		}	
